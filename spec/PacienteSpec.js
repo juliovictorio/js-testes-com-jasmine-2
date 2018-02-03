@@ -3,8 +3,8 @@ describe("Paciente", function() {
     var guilherme;
 
     beforeEach(function() {
-        guilherme = new Paciente("Guilherme", 28, 72, 1.82);
-        //guilherme = new PacienteBuilder().constroi();
+        //guilherme = new Paciente("Guilherme", 28, 72, 1.82);
+        guilherme = new PacienteBuilder().constroi();
     });
 
     it("deve calcular o IMC", function() {
